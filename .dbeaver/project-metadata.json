@@ -1,0 +1,1 @@
+{"resources":{"Scripts/1-grant.sql":{"sql-editor-data-source-id":"mysql8-17a1d157a50-7ca730d47cf84825","default-datasource":"mysql8-17a1d157a50-7ca730d47cf84825"},"Scripts/2-ddl.sql":{"sql-editor-data-source-id":"mysql8-17a1d1703bc-3c261e5122d83e59","default-datasource":"mysql8-17a1d1703bc-3c261e5122d83e59","default-catalog":"jpa_app"}}}

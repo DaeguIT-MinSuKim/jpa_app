@@ -1,0 +1,61 @@
+{
+	"folders": {},
+	"connections": {
+		"mysql8-17a1d157a50-7ca730d47cf84825": {
+			"provider": "mysql",
+			"driver": "mysql8",
+			"name": "localhost",
+			"save-password": true,
+			"show-system-objects": true,
+			"read-only": false,
+			"configuration": {
+				"host": "localhost",
+				"port": "3306",
+				"url": "jdbc:mysql://localhost:3306/",
+				"home": "C:\\Program Files\\MySQL\\MySQL Server 5.7",
+				"type": "dev",
+				"auth-model": "native",
+				"handlers": {}
+			}
+		},
+		"mysql8-17a1d1703bc-3c261e5122d83e59": {
+			"provider": "mysql",
+			"driver": "mysql8",
+			"name": "jpa_app",
+			"save-password": true,
+			"show-system-objects": true,
+			"read-only": false,
+			"configuration": {
+				"host": "localhost",
+				"port": "3306",
+				"database": "jpa_app",
+				"url": "jdbc:mysql://localhost:3306/jpa_app",
+				"home": "C:\\Program Files\\MySQL\\MySQL Server 5.7",
+				"type": "dev",
+				"auth-model": "native",
+				"handlers": {}
+			}
+		}
+	},
+	"virtual-models": {
+		"mysql8-17a1d1703bc-3c261e5122d83e59": {
+			"jpa_app": {
+				"@properties": {
+					"erd.diagram.state": {
+						"serialized": "<diagram version=\"1\" name=\"jpa_app\" time=\"202106181243\"><entities><data-source id=\"mysql8-17a1d1703bc-3c261e5122d83e59\"><entity id=\"1\" name=\"category\" fq-name=\"jpa_app.category\" order=\"0\" x=\"706\" y=\"3\"><path name=\"jpa_app\"/></entity><entity id=\"2\" name=\"category_item\" fq-name=\"jpa_app.category_item\" order=\"1\" x=\"700\" y=\"139\"><path name=\"jpa_app\"/></entity><entity id=\"3\" name=\"delivery\" fq-name=\"jpa_app.delivery\" order=\"2\" x=\"95\" y=\"512\"><path name=\"jpa_app\"/></entity><entity id=\"4\" name=\"hibernate_sequence\" fq-name=\"jpa_app.hibernate_sequence\" order=\"3\" x=\"394\" y=\"552\"><path name=\"jpa_app\"/></entity><entity id=\"5\" name=\"item\" fq-name=\"jpa_app.item\" order=\"4\" x=\"701\" y=\"286\"><path name=\"jpa_app\"/></entity><entity id=\"6\" name=\"member\" fq-name=\"jpa_app.`member`\" order=\"5\" x=\"102\" y=\"42\"><path name=\"jpa_app\"/></entity><entity id=\"7\" name=\"order_item\" fq-name=\"jpa_app.order_item\" order=\"6\" x=\"404\" y=\"274\"><path name=\"jpa_app\"/></entity><entity id=\"8\" name=\"orders\" fq-name=\"jpa_app.orders\" order=\"7\" x=\"99\" y=\"274\"><path name=\"jpa_app\"/></entity></data-source></entities><relations><relation name=\"FK2y94svpmqttx80mshyny85wqr\" fq-name=\"jpa_app.category.FK2y94svpmqttx80mshyny85wqr\" type=\"fk\" pk-ref=\"1\" fk-ref=\"1\"><bend type=\"rel\" x=\"848\" y=\"111\"/><bend type=\"rel\" x=\"763\" y=\"138\"/></relation><relation name=\"FKcq2n0opf5shyh84ex1fhukcbh\" fq-name=\"jpa_app.category_item.FKcq2n0opf5shyh84ex1fhukcbh\" type=\"fk\" pk-ref=\"1\" fk-ref=\"2\"/><relation name=\"FKtkrur7wg4d8ax0pwgo0vmy20c\" fq-name=\"jpa_app.orders.FKtkrur7wg4d8ax0pwgo0vmy20c\" type=\"fk\" pk-ref=\"3\" fk-ref=\"8\"/><relation name=\"FKu8b4lwqutcdq3363gf6mlujq\" fq-name=\"jpa_app.category_item.FKu8b4lwqutcdq3363gf6mlujq\" type=\"fk\" pk-ref=\"5\" fk-ref=\"2\"/><relation name=\"FKija6hjjiit8dprnmvtvgdp6ru\" fq-name=\"jpa_app.order_item.FKija6hjjiit8dprnmvtvgdp6ru\" type=\"fk\" pk-ref=\"5\" fk-ref=\"7\"/><relation name=\"FKpktxwhj3x9m4gth5ff6bkqgeb\" fq-name=\"jpa_app.orders.FKpktxwhj3x9m4gth5ff6bkqgeb\" type=\"fk\" pk-ref=\"6\" fk-ref=\"8\"/><relation name=\"FKt4dc2r9nbvbujrljv3e23iibt\" fq-name=\"jpa_app.order_item.FKt4dc2r9nbvbujrljv3e23iibt\" type=\"fk\" pk-ref=\"8\" fk-ref=\"7\"/></relations></diagram>"
+					}
+				}
+			}
+		}
+	},
+	"connection-types": {
+		"dev": {
+			"name": "Development",
+			"color": "255,255,255",
+			"description": "Regular development database",
+			"auto-commit": true,
+			"confirm-execute": false,
+			"confirm-data-change": false
+		}
+	}
+}
